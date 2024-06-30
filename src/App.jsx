@@ -16,9 +16,7 @@ function App() {
       const res = await fetch(advieApi)
       const data = await res.json()
       setId(data.slip.id)
-      setAdvice(data.slip.advice)
-      console.log(id, advice);
-      console.log(data);
+      setAdvice(data.slip.advice)      
     } catch (error) {
       console.log('Error fecthing data', error);
     }
